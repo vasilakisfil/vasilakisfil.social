@@ -1,0 +1,20 @@
+body {
+  font-family: Merriweather serif;
+}
+.main-background {
+  background-image: url('https://vasilakisfil.social/images/cover.jpg');
+  background-size: cover;
+}
+.navbar-link.has-arrow-white::after {
+  border-color: white;
+}
+
+.navbar-link.has-arrow-black::after {
+  border-color: black;
+}
+body {
+  scrollbar-width: none;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
