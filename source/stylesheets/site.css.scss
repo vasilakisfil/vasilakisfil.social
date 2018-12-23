@@ -1,5 +1,6 @@
 body {
   font-family: Merriweather serif;
+  background-color: #fafafa;
 }
 .main-background {
   background-image: url('https://vasilakisfil.social/images/cover.jpg');
@@ -17,4 +18,12 @@ body {
 }
 ::-webkit-scrollbar { 
     display: none; 
+}
+.is-horizontal-center {
+  justify-content: center;
+}
+.profile-image {
+  border-radius: 100%;
+  box-shadow: #E7EEF2 0 0 0 1px;
+  padding: 6px;
 }

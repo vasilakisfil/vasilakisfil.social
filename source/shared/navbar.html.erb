@@ -3,9 +3,8 @@
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link <%= current_page.data&.navbar.navbar_link&.css %>">
-          About
         </a>
-        <div class="navbar-dropdown">
+        <div class="navbar-dropdown is-hidden-touch">
           <%= link_to('Home', '/index.html', class: 'navbar-item') %>
           <hr class="navbar-divider">
           <%= link_to('About', '/about.html', class: 'navbar-item') %>
@@ -15,14 +14,18 @@
   </nav>
   <div class="hero-body has-text-centered">
     <div class="container">
-      <h1 class="title <%= current_page.data&.navbar&.title&.css %>">
-        <%= current_page.data.navbar.title.text %>
-      </h1>
-      <% if current_page.data.navbar.subtitle %>
-        <h2 class="subtitle <%= current_page.data.navbar.subtitle.css %>">
-          <%= current_page.data.navbar.subtitle.text %>
-        </h2>
-      <% end %>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <h1 class="title <%= current_page.data&.navbar&.title&.css %>">
+            <%= current_page.data.navbar.title.text %>
+          </h1>
+          <% if current_page.data.navbar.subtitle %>
+            <h2 class="subtitle <%= current_page.data.navbar.subtitle.css %>">
+              <%= current_page.data.navbar.subtitle.text %>
+            </h2>
+          <% end %>
+        </div>
+      </div>
     </div>
   </div>
 </section>
