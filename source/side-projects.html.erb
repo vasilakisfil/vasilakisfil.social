@@ -3,7 +3,7 @@ navbar:
   navbar_link:
     css: has-arrow-black
 ---
-<%= partial("shared/navbar", locals: { data: current_page.data}) %>
+<%= partial("shared/navbar2", locals: { data: current_page.data}) %>
 
 <section class="section">
   <h1 class="title is-1 has-text-centered">Side Projects</h1>
@@ -11,7 +11,7 @@ navbar:
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-size-5">
       <p class="has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
+      Apart from my work, on my spare time I like building things that I hope are useful to others.
       Here I list some of my side projects in random order.
       </p>
 
@@ -22,41 +22,66 @@ navbar:
     <div class="column is-three-fifths is-offset-one-fifth is-size-5">
       <h4 class="title is-4"><a href="https://github.com/vasilakisfil/SimpleAMS">SimpleAMS</a></h4>
       <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
+      I have been working with APIs since 2014 and the legacy ActiveModelSerializers library is the first ruby gem
+      I used to serialize my objects. Back then using this library, we could do quite advanced things, even graphql-like
+      APIs when GraphQL wasn't even announced. Unfortunately, the rewritten ActiveModelSerializers library didn't really
+      meet my requirements and as it was painstakingly difficult to do some (easy) things.
+      <br /><br />
+      SimpleAMS is a library for serializing POROs using my taste of things. I tried to make a very clean, flexible
+      yet powerful API through an inclusion of a single module.
       </p>
 
       <h4 class="title is-4"><a href="http://introspected.rest">Introspected REST</a></h4>
       <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
+      Having worked with APIs so much time, I have seen a recurring pattern:
+      backend developers create APIs for frontend developers, but they (the backend devs) never use them themselves.
+      So at times, the API is either plain JSON reflecting the database structure, or if the developer knows what
+      hypermedia is, the API becomes a super complex thing with hypermedia embedded all over the place by default.
+      <br /><br />
+      Introspected REST tries to solve this problem by first analyzing where REST fails (spoiler: it treats everything, data and hypermedia,
+      as a simple entity increasing complexity) and suggests a new model that separates the concerns of the actual API plain data and API metadata.
+      The API metadata include hypermedia related data like links, forms etc and can be either runtime or static.
+      <br /><br />
+      It's published as an open publication.
       </p>
 
       <h4 class="title is-4"><a href="https://github.com/vasilakisfil/rails5_api_tutorial">Rails 5 API tutorial</a></h4>
       <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
-      </p>
-
-      <h4 class="title is-4"><a href="https://github.com/vasilakisfil/api_bomb">api_bomb</a></h4>
-      <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
-      </p>
-
-      <h4 class="title is-4"><a href="https://github.com/kollegorna/active_hash_relation">active_hash_relation</a></h4>
-      <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
+      After having worked so many years with Rails and APIs I went on and created a top notch API tutorial for Rails.
+      <br /><br />
+      It shows you how you can extend your Rails app and build an API without changing a single line of
+      code from your existing app (i.e. API part is completely separate from the app part).
+      It uses <a href="https://www.railstutorial.org/"> Michael Hartl's Rails tutorial </a>
+      which is a classic Rails app and extend it by building an API on top of it.
       </p>
 
       <h4 class="title is-4"><a href="https://github.com/kollegorna/class_profiler">class_profiler</a></h4>
       <p class="subtitle is-5 has-text-justified margin-bottom-5">
-      Apart from my work, on my spare time I like building things that could be useful to others.
-      Here I list some of my side projects.
+      It's performance analyzer for Ruby classes.
+      Just include it in the bottom of your class and let it analyze your Ruby class performance.
+      Motivation and detailed explanation can be found in
+      <a href="https://blog.kollegorna.se/ruby-performance-profiling-an-unorthodox-approach-69c549e3293b?gi=1cdb6b6a44b1">this blog post.</a>
       </p>
+
+      <h4 class="title is-4"><a href="https://github.com/vasilakisfil/api_bomb">api_bomb</a></h4>
+      <p class="subtitle is-5 has-text-justified margin-bottom-5">
+      Again an HTTP API related library that allows you to load test your app.
+      It has a very simple but extremely powerful (mostly due to http.rb gem) interface that makes it extremely
+      easy to run various scenarios (like submitting data coming from FactoryBot factories).
+      </p>
+
+      <h4 class="title is-4"><a href="https://github.com/kollegorna/active_hash_relation">active_hash_relation</a></h4>
+      <p class="subtitle is-5 has-text-justified margin-bottom-5">
+      Simple ruby gem that allows you to transform a json input into an ActiveRelation. Ideal for APIs :)
+      </p>
+
+      <h4 class="title is-4"><a href="https://github.com/vasilakisfil/active_cash">active_cash</a></h4>
+      <p class="subtitle is-5 has-text-justified margin-bottom-5">
+      Drop in cache strategies for ActiveRecord, similar to
+      <a href="https://github.com/Shopify/identity_cache">Shopify's identity_cache</a>, but without support for relations.
+      However, it uses Redis by default instead of Memcached.
+      </p>
+
     </div>
   </div>
 </section>

@@ -12,8 +12,7 @@ navbar:
   navbar_link:
     css: has-text-white has-arrow-white
 ---
-
-<% partial("shared/navbar", locals: { data: current_page.data}) do %>
+<% partial("shared/navbar2", locals: { data: current_page.data}) do %>
   <div class="hero-body has-text-centered">
     <div class="container">
       <div class="columns is-centered">
@@ -28,7 +27,11 @@ navbar:
           <h2 class="subtitle has-text-white">
             Web Engineer
           </h2>
-          <p><i class="fas fa-map-marker-alt"></i> <span>Stockholm, Sweden & Athens, Greece</span></p>
+          <p class="subtitle">
+            <a class="inverted" href="https://github.com/vasilakisfil"><i class="fab fa-github"></i></a>
+            <a class="inverted" href="https://twitter.com/vasilakisfil"><i class="fab fa-twitter"></i></a>
+          </p>
+          <p><i class="fas fa-map-marker-alt"></i> <span class="has-text-white">Stockholm, Sweden & Athens, Greece</span></p>
         </div>
       </div>
     </div>

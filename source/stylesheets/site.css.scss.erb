@@ -1,3 +1,7 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+$navbar-breakpoint: 10000000px;
+@import "bulma/bulma";
+
 body {
   font-family: Merriweather serif;
   background-color: #fafafa;
@@ -5,28 +9,31 @@ body {
 section {
   background-color: #fafafa;
 }
-
+html {
+  overflow-y: auto;
+}
 html, body {
   margin: 0;
   min-height: 100%;
   height: 100%;
 }
+a.inverted {
+  color: #363636;
+}
+a.inverted:hover {
+  color: #3273dc;
+}
 .main-background {
   background-image: url('https://vasilakisfil.social/images/cover.jpg');
   background-size: cover;
 }
+.navbar-link:hover {
+}
 .navbar-link.has-arrow-white::after {
   border-color: white;
 }
-
 .navbar-link.has-arrow-black::after {
   border-color: black;
-}
-body {
-  scrollbar-width: none;
-}
-::-webkit-scrollbar { 
-    display: none; 
 }
 .is-horizontal-center {
   justify-content: center;
@@ -59,4 +66,10 @@ body {
 }
 .margin-bottom-5 {
   margin-bottom: 5% !important;
+}
+.navbar {
+  background-color: transparent;
+}
+.navbar-brand.is-active {
+  background-color: #fafafa;
 }
