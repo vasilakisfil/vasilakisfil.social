@@ -1,8 +1,8 @@
-<section class="hero <%= current_page.data&.section&.css %>">
+<section class="hero <%= data.section&.css %>">
   <nav class="navbar is-transparent">
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link <%= current_page.data&.navbar.navbar_link&.css %>">
+        <a class="navbar-link <%= data.navbar.navbar_link&.css %>">
         </a>
         <div class="navbar-dropdown is-hidden-touch">
           <%= link_to('Home', '/index.html', class: 'navbar-item') %>
@@ -12,20 +12,18 @@
       </div>
     </div>
   </nav>
-  <div class="hero-body has-text-centered">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <h1 class="title <%= current_page.data&.navbar&.title&.css %>">
-            <%= current_page.data.navbar.title.text %>
-          </h1>
-          <% if current_page.data.navbar.subtitle %>
-            <h2 class="subtitle <%= current_page.data.navbar.subtitle.css %>">
-              <%= current_page.data.navbar.subtitle.text %>
-            </h2>
-          <% end %>
+
+  <% if block_given? %>
+    <%= yield %>
+  <% elsif data.title %>
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <h1 class="title"><%= data.title %></h1>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  <% end %>
 </section>

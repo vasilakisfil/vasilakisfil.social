@@ -13,3 +13,24 @@ navbar:
     css: has-text-white has-arrow-white
 ---
 
+<% partial("shared/navbar", locals: { data: current_page.data}) do %>
+  <div class="hero-body has-text-centered">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <figure class="image container is-128x128 profile-image">
+            <img class="is-rounded" src="https://vasilakisfil.social/images/logo.jpg">
+          </figure>
+
+          <h1 class="title has-text-white">
+            Filippos Vasilakis
+          </h1>
+          <h2 class="subtitle has-text-white">
+            Web Engineer
+          </h2>
+          <p><i class="fas fa-map-marker-alt"></i> <span>Stockholm, Sweden & Athens, Greece</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
