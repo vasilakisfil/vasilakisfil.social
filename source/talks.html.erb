@@ -1,0 +1,130 @@
+---
+navbar:
+  navbar_link:
+    css: has-arrow-black
+---
+
+<%= partial("shared/navbar", locals: { data: current_page.data}) %>
+
+<section class="section has-text-centered">
+  <h1 class="title is-1"> Talks </h1>
+  <div class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth is-size-5">
+
+      <p class="title is-5"> From Media Types to MicroTypes and Introspected REST </p>
+      <p class="subtitle is-6"><em>APIDays Paris conference, January 2018.</em></p>
+
+      <div class="aspect-ratio">
+        <iframe
+          src="//slides.com/vasilakisfil/from-media-types-to-microtypes/embed"
+          scrolling="no" frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="has-text-justified margin-top-3 margin-bottom-5">
+        A talk again specifically for MicroTypes was hosted in APIDays in Paris,
+        that was targeted to more advanced audience and covered the whole
+        MicroTypes concept with rigid definition of each property along with its implementation in HTTP.
+        Towards the end we discussed new paradigms that such architecture could lead (i.e. introspecting capabilities of HTTP APIs for configurability, discovery of capabilities etc).
+
+        Unfortunately no video or recorded audio of this talk is available although it was very interesting talk because I could finally explain the whole concept
+        without fearing that I will lose the audience. Lesson learned: next time I give a talk and I don't see cameras I will record the audio of my talk with my phone..
+      </p>
+
+
+      <p class="title is-5"> MicroTypes: Composability in HTTP APIs</p>
+      <p class="subtitle is-6"><em>Nordic APIs conference, October 2017.</em></p>
+
+      <div class="aspect-ratio">
+        <iframe
+          src="//slides.com/vasilakisfil/microtypes-composability-for-http-apis/embed"
+          scrolling="no" frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <p class="has-text-justified margin-top-3 margin-bottom-5">
+        Microtypes in combination with reactive negotiation, a forgotten but still valid negotiation mechanism in HTTP,
+        can give us enormous possibilities when designing a new API by allowing the API designers to tailor the API
+        capabilities to their needs while at the same time it enables clients to negotiate parts of the API functionality
+        that are only interested or understand and not the Media Type as a whole. Choosing between REST or GraphQL won’t
+        be necessary as APIs can support both styles progressively, simultaneously, or asymmetrically for different
+        classes of clients, using multiple sets of MicroTypes.
+        There is a video version available as well from the talk.
+      </p>
+
+      <div class="aspect-ratio wide margin-bottom-5">
+        <iframe
+          src="https://www.youtube.com/embed/pc8ZyFjJY4A"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="title is-5"> Sliding away from Roy Fielding's REST model</p>
+      <p class="subtitle is-6"><em>Nordic APIs conference, October 2016.</em></p>
+
+      <div class="aspect-ratio">
+        <iframe
+          src="//slides.com/vasilakisfil/sliding-away-from-roy-fielding-rest-model/embed"
+          scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="has-text-justified margin-top-3 margin-bottom-5">
+        We go through what a modern REST API is, see what are the least features we should provide to the clients,
+        how we can test it super fast (because testing APIs can be very time consuming!) and how we can optimize it's performance.
+        The talk is not bound to any specific API spec (JSONAPI, Serien, HAL etc) but goes though all the principles of a modern REST API.
+
+        However it challenges Roy Fieldings's thesis on REST APIs (is it still valid, 17 years later?) along with current specs which are
+        based on Roy's thesis (like JSONAPI spec) especially when high performance is part of the API design.
+
+        There is a video version available as well from that talk.
+      </p>
+
+      <div class="aspect-ratio wide">
+        <iframe
+          src="https://www.youtube.com/embed/RY_kMXEJZfk"
+          frameborder="0" allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="title is-5">Building real world apps in EmberJS</p>
+      <p class="subtitle is-6"><em>Stockholm EmberJS Meetup, May 2016.</em></p>
+
+      <div class="aspect-ratio">
+        <iframe
+          src="//slides.com/vasilakisfil/emberjs26-tutorial/embed"
+          scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="has-text-justified margin-top-3 margin-bottom-5">
+        Shows how you can build a real app on Ember and not yet another ToDo list.
+        Highlights latest Ember features and common practices.
+      </p>
+
+
+      <p class="title is-5">APIs on Ruby (and possible Rails)</p>
+      <p class="subtitle is-6"><em>Athens Ruby Meetup, January 2016.</em></p>
+
+      <div class="aspect-ratio">
+        <iframe
+          src="//slides.com/vasilakisfil/apis-on-ruby-and-rails/embed"
+          scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <p class="has-text-justified margin-top-3 margin-bottom-5">
+        Discusses best practices for building, testing and optimizing modern APIs.
+        Ruby and Rails is used in the slides but the practices should be the same regadless the language.
+
+        It reflects Videofy's backend we built in the end of 2015.
+      </p>
+    </div>
+  </div>
+</section>
