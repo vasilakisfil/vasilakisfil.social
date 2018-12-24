@@ -5,11 +5,13 @@
         <a class="navbar-link <%= data.navbar.navbar_link&.css %>">
         </a>
         <div class="navbar-dropdown is-hidden-touch">
-          <%= link_to('Home', '/index.html', class: 'navbar-item') %>
+          <%= link_to('Home', '/', class: 'navbar-item') %>
           <hr class="navbar-divider">
-          <%= link_to('About', '/about.html', class: 'navbar-item') %>
+          <%= link_to('About', '/about', class: 'navbar-item') %>
           <hr class="navbar-divider">
-          <%= link_to('Talks', '/talks.html', class: 'navbar-item') %>
+          <%= link_to('Talks', '/talks', class: 'navbar-item') %>
+          <hr class="navbar-divider">
+          <%= link_to('Side projects', '/side-projects', class: 'navbar-item') %>
         </div>
       </div>
     </div>

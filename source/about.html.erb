@@ -5,26 +5,23 @@ navbar:
 ---
 <%= partial("shared/navbar", locals: { data: current_page.data}) %>
 
-<section class="section has-text-centered">
+<section class="section">
   <h1 class="title is-1 has-text-centered">About</h1>
   <div class="columns">
     <div class="column is-three-fifths is-offset-one-fifth is-size-5">
-      A software engineer who loves crafting web services. <br /><br />
-      Worked mostly with Ruby and Javascript, but familiar with C/Go/Java/C++ as well.
-      REST APIs specialist.
-      Optimizing services for low latency and high throughput is my thing. Pure interest in networks and services.<br /><br />
-      Experienced with remote working.
+      <p class="has-text-justified">
+        I am a software engineer who loves crafting web services.
+        Worked mostly with Ruby and Javascript, but familiar with C/Go/Java/C++ as well.
+        REST APIs specialist.
+        Optimizing services for low latency and high throughput is my thing. Pure interest in networks and services.
+      </p>
+      <br />
+      <p class="has-text-justified">
+        Experienced with remote working.
+      </p>
     </div>
   </div>
 
 </section>
-<footer class="footer">
-  <figure class="image container is-128x128 profile-image">
-    <img class="is-rounded" src="https://vasilakisfil.social/images/logo.jpg">
-  </figure>
-  <div class="content has-text-centered">
-    <h4> Filippos Vasilakis </h4>
-    <p> Web Engineer </p>
-    <p><i class="fas fa-map-marker-alt"></i> <span>Stockholm, Sweden & Athens, Greece</span></p>
-  </div>
-</footer>
+
+<%= partial("shared/footer", locals: { data: current_page.data}) %>

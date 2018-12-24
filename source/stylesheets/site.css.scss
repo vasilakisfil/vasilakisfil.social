@@ -2,6 +2,15 @@ body {
   font-family: Merriweather serif;
   background-color: #fafafa;
 }
+section {
+  background-color: #fafafa;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
 .main-background {
   background-image: url('https://vasilakisfil.social/images/cover.jpg');
   background-size: cover;
@@ -46,8 +55,8 @@ body {
   top: 0;
 }
 .margin-top-3 {
-  margin-top: 3%;
+  margin-top: 3% !important;
 }
 .margin-bottom-5 {
-  margin-bottom: 5%
+  margin-bottom: 5% !important;
 }
