@@ -4,7 +4,7 @@ navbar:
     css: has-arrow-black
 ---
 
-<%= partial("shared/navbar2", locals: { data: current_page.data}) %>
+<%= partial("shared/navbar", locals: { data: current_page.data}) %>
 
 <section class="section has-text-centered">
   <h1 class="title is-1"> Talks </h1>
@@ -84,7 +84,7 @@ navbar:
         There is a video version available as well from that talk.
       </p>
 
-      <div class="aspect-ratio wide">
+      <div class="aspect-ratio wide margin-bottom-5">
         <iframe
           src="https://www.youtube.com/embed/RY_kMXEJZfk"
           frameborder="0" allowfullscreen
