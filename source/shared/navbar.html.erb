@@ -11,7 +11,7 @@
       </a>
     </div>
 
-    <div id="navbarBasicExample" class="navbar-menu"">
+    <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <%= link_to('Home', '/', class: 'navbar-item') %>
         <hr class="navbar-divider">
@@ -20,21 +20,13 @@
         <%= link_to('Talks', '/talks', class: 'navbar-item') %>
         <hr class="navbar-divider">
         <%= link_to('Side projects', '/side-projects', class: 'navbar-item') %>
+        <hr class="navbar-divider">
+        <%= link_to('Blog', '/blog', class: 'navbar-item', rel: 'feed') %>
       </div>
     </div>
   </nav>
 
   <% if block_given? %>
     <%= yield %>
-  <% elsif data.title %>
-    <div class="hero-body has-text-centered">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-half">
-            <h1 class="title"><%= data.title %></h1>
-          </div>
-        </div>
-      </div>
-    </div>
   <% end %>
 </section>
