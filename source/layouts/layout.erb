@@ -14,6 +14,9 @@
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <% if not index? %>
+      <%= partial("shared/navbar", locals: { data: current_page.data}) %>
+    <% end %>
     <%= yield %>
     <% if not index? %>
       <%= partial("shared/footer", locals: { data: current_page.data}) %>
