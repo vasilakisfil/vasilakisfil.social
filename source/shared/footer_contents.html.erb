@@ -1,0 +1,35 @@
+<div class="h-card">
+  <figure class="image container is-128x128 profile-image">
+    <img class="is-rounded u-photo" src="https://vasilakisfil.social/images/logo.jpg">
+  </figure>
+  <% if index? %>
+  <h1 class="title">
+    <a class="has-text-white p-name p-url" href="https://vasilakisfil.social">Filippos Vasilakis</a>
+  </h1>
+  <h2 class="subtitle has-text-white p-job-title">
+    Web Engineer
+  </h2>
+  <% else %>
+  <div class="content has-text-centered">
+    <h4 class="title is-5">
+      <a class="inverted" href="https://vasilakisfil.social">Filippos Vasilakis</a>
+    </h4>
+    <p class="subtitle is-6"> Web Engineer </p>
+  <% end %>
+    <p class="subtitle">
+      <a class="inverted" rel="me" href="https://github.com/vasilakisfil"><i class="fab fa-github"></i></a>
+      <a class="inverted" rel="me" href="https://twitter.com/vasilakisfil"><i class="fab fa-twitter"></i></a>
+      <a class="inverted u-email" rel="me" href="mailto:vasilakisfil@gmail.com"><i class="fas fa-envelope-square"></i></a>
+    </p>
+    <p><i class="fas fa-map-marker-alt p-locality p-country-name"></i>
+    <span class="<%= index?? "has-text-white" : "" %>">
+        <span class="p-locality">Stockholm</span>,
+        <span class="p-country-name">Sweden</span> &
+        <span class="p-locality">Athens</span>,
+        <span class="p-country-name">Greece</span>
+      </span>
+    </p>
+  <% if not index? %>
+  </div>
+  <% end %>
+</div>

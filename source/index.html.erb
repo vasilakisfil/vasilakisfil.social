@@ -17,21 +17,7 @@ navbar:
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-half">
-          <figure class="image container is-128x128 profile-image">
-            <img class="is-rounded" src="https://vasilakisfil.social/images/logo.jpg">
-          </figure>
-
-          <h1 class="title has-text-white">
-            Filippos Vasilakis
-          </h1>
-          <h2 class="subtitle has-text-white">
-            Web Engineer
-          </h2>
-          <p class="subtitle">
-            <a class="inverted" href="https://github.com/vasilakisfil"><i class="fab fa-github"></i></a>
-            <a class="inverted" href="https://twitter.com/vasilakisfil"><i class="fab fa-twitter"></i></a>
-          </p>
-          <p><i class="fas fa-map-marker-alt"></i> <span class="has-text-white">Stockholm, Sweden & Athens, Greece</span></p>
+          <%= partial("shared/footer_contents", locals: {data: data}) %>
         </div>
       </div>
     </div>
