@@ -1,3 +1,5 @@
 * Add GPG
 * Add JSON-LD
-* Add feed entries, feed rel
+* ~~Add feed entries, feed rel~~
+* Add og entries for blog
+* Add twitter cards for main and blog

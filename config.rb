@@ -51,5 +51,8 @@ set(:markdown, {
   fenced_code_blocks: true,
   smartypants: true,
 })
+
 activate :syntax, :line_numbers => false
 activate :pry
+require "helpers/custom_helpers"
+helpers CustomHelpers

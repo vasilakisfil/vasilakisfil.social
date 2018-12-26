@@ -1,10 +1,10 @@
 <div class="h-card">
   <figure class="image container is-128x128 profile-image">
-    <img class="is-rounded u-photo" src="https://vasilakisfil.social/images/logo.jpg">
+    <%= image_tag("logo.jpg", class: "is-rounded u-photo") %>
   </figure>
   <% if index? %>
   <h1 class="title">
-    <a class="has-text-white p-name p-url" href="https://vasilakisfil.social">Filippos Vasilakis</a>
+    <a class="has-text-white p-name p-url" href="<%= base_url %>">Filippos Vasilakis</a>
   </h1>
   <h2 class="subtitle has-text-white p-job-title">
     Web Engineer
@@ -12,7 +12,7 @@
   <% else %>
   <div class="content has-text-centered">
     <h4 class="title is-5">
-      <a class="inverted" href="https://vasilakisfil.social">Filippos Vasilakis</a>
+      <a class="inverted" href="<%= base_url %>">Filippos Vasilakis</a>
     </h4>
     <p class="subtitle is-6"> Web Engineer </p>
   <% end %>
