@@ -1,8 +1,6 @@
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
-activate :sprockets
-sprockets.append_path File.join(root, "node_modules")
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -51,6 +49,9 @@ set(:markdown, {
   fenced_code_blocks: true,
   smartypants: true,
 })
+
+activate :sprockets
+sprockets.append_path File.join(root, "node_modules")
 
 activate :syntax, :line_numbers => false
 activate :pry

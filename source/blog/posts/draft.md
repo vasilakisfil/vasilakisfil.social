@@ -1,3 +1,8 @@
+---
+title: Work In Progress
+published: false
+---
+
 There are 3 types of denouncers of REST model.
 
 1. The ones who understand what REST is and feel that due to its complexity, they prefer loosing some features and deliver something
