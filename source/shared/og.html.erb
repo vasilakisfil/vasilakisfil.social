@@ -3,5 +3,13 @@
 <meta property="og:url" content="<%= current_url %>" />
 <meta property="og:image" content="<%= image_url("cover.jpg") %>" />
 <% if blog_entry? && current_page.try(:summary) %>
-  <meta property="og:description" content="<%= Nokogiri::HTML(current_page.summary(500)).text %>" />
+  <meta property="og:description" content="<%= Nokogiri::HTML(current_page.summary(200)).text %>" />
 <% end %>
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@vasilakisfil" />
+<meta name="twitter:title" content="<%= page_title %>" />
+<% if blog_entry? && current_page.try(:summary) %>
+  <meta name="twitter:description" content="<%= Nokogiri::HTML(current_page.summary(200)).text %>" />
+<% end %>
+<meta name="twitter:image" content="<%= image_url("cover.jpg") %>" />
