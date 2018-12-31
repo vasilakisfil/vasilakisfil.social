@@ -7,11 +7,27 @@ module CustomHelpers
     current_page.url == "/blog" || current_page.url == "/blog/"
   end
 
+  def blog?
+    current_page.url.include?("/blog")
+  end
+
+  def blog_entry?
+    current_page.url.include?("/blog/") && !current_page.url.end_with?("/blog/")
+  end
+
   def page_title
-    if index?
-      "Filippos Vasilakis"
+    if blog?
+      if blog_index?
+        "Filippos Vasilakis | Blog"
+      else
+        "#{current_page.data.title}"
+      end
     else
-      "Filippos Vasilakis | #{current_page.data.title}"
+      if index?
+        "Filippos Vasilakis"
+      else
+        "Filippos Vasilakis | #{current_page.data.title}"
+      end
     end
   end
 

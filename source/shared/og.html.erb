@@ -1,0 +1,7 @@
+<meta property="og:title" content="<%= page_title %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<%= current_url %>" />
+<meta property="og:image" content="<%= image_url("cover.jpg") %>" />
+<% if blog_entry? && current_page.try(:summary) %>
+  <meta property="og:description" content="<%= Nokogiri::HTML(current_page.summary(500)).text %>" />
+<% end %>
