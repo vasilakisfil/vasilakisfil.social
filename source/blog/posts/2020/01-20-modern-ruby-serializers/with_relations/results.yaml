@@ -1,0 +1,676 @@
+--- !ruby/object:Results
+internal:
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 19:55:10 +0100'
+    :time: &1
+      :runtime: 500
+      :warmup: 50
+    :collection_size: 1
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 38304
+            :retained: 17808
+          :objects:
+            :allocated: 378
+            :retained: 66
+          :strings:
+            :allocated: 50
+            :retained: 21
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.223684210526316
+          :memory:
+            :allocated: 123480
+            :retained: 24752
+          :objects:
+            :allocated: 885
+            :retained: 93
+          :strings:
+            :allocated: 33
+            :retained: 21
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.423558897243108
+          :memory:
+            :allocated: 207744
+            :retained: 0
+          :objects:
+            :allocated: 1545
+            :retained: 0
+          :strings:
+            :allocated: 30
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 21.30033416875522
+          :memory:
+            :allocated: 815888
+            :retained: 70001
+          :objects:
+            :allocated: 7253
+            :retained: 555
+          :strings:
+            :allocated: 50
+            :retained: 50
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 6761.133565593326
+          :ips: 6761.133565593326
+          :error: 199
+          :microseconds: 500076156.18199635
+          :iterations: 3377885
+          :cycles: 721
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 2745.378623652486
+          :ips: 2745.378623652486
+          :error: 107
+          :microseconds: 500021667.10798836
+          :iterations: 1370325
+          :cycles: 275
+          :slowdown: 2.462732647272612
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 1505.1510165445252
+          :ips: 1505.1510165445252
+          :error: 61
+          :microseconds: 500005703.9339895
+          :iterations: 751200
+          :cycles: 150
+          :slowdown: 4.491996810469762
+        AMS:
+          :name: AMS
+          :central_tendency: 528.5443270041652
+          :ips: 528.5443270041652
+          :error: 18
+          :microseconds: 500030327.9150963
+          :iterations: 263952
+          :cycles: 52
+          :slowdown: 12.791989659440702
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 20:31:52 +0100'
+    :time: *1
+    :collection_size: 5
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 180192
+            :retained: 87752
+          :objects:
+            :allocated: 1776
+            :retained: 313
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.2471141893091815
+          :memory:
+            :allocated: 585104
+            :retained: 120576
+          :objects:
+            :allocated: 4235
+            :retained: 443
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.337240277037826
+          :memory:
+            :allocated: 961728
+            :retained: 232
+          :objects:
+            :allocated: 7065
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.473317350381815
+          :memory:
+            :allocated: 986248
+            :retained: 0
+          :objects:
+            :allocated: 8951
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 1433.7264003928117
+          :ips: 1433.7264003928117
+          :error: 50
+          :microseconds: 500081015.0750561
+          :iterations: 716001
+          :cycles: 143
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 585.8132672443744
+          :ips: 585.8132672443744
+          :error: 34
+          :microseconds: 500028805.8899765
+          :iterations: 291740
+          :cycles: 58
+          :slowdown: 2.4474119665076257
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 328.1050678644391
+          :ips: 328.1050678644391
+          :error: 13
+          :microseconds: 500017018.46694183
+          :iterations: 163776
+          :cycles: 32
+          :slowdown: 4.369717327820046
+        AMS:
+          :name: AMS
+          :central_tendency: 106.86014242159378
+          :ips: 106.86014242159378
+          :error: 5
+          :microseconds: 500031551.64912605
+          :iterations: 53310
+          :cycles: 10
+          :slowdown: 13.416849050568842
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 21:08:33 +0100'
+    :time: *1
+    :collection_size: 10
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 357816
+            :retained: 174856
+          :objects:
+            :allocated: 3526
+            :retained: 623
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.2536275627696916
+          :memory:
+            :allocated: 1164200
+            :retained: 240952
+          :objects:
+            :allocated: 8425
+            :retained: 883
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.318398282916359
+          :memory:
+            :allocated: 1903008
+            :retained: 232
+          :objects:
+            :allocated: 13965
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.494175777494578
+          :memory:
+            :allocated: 1965904
+            :retained: 0
+          :objects:
+            :allocated: 17841
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 729.5392939653365
+          :ips: 729.5392939653365
+          :error: 23
+          :microseconds: 500024131.353899
+          :iterations: 364392
+          :cycles: 72
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 300.0712278261282
+          :ips: 300.0712278261282
+          :error: 21
+          :microseconds: 500036884.6410427
+          :iterations: 149147
+          :cycles: 29
+          :slowdown: 2.4312204114019793
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 166.30227828346005
+          :ips: 166.30227828346005
+          :error: 7
+          :microseconds: 500045948.82102394
+          :iterations: 83008
+          :cycles: 16
+          :slowdown: 4.386826816177745
+        AMS:
+          :name: AMS
+          :central_tendency: 52.49373105041497
+          :ips: 52.49373105041497
+          :error: 4
+          :microseconds: 500074653.70892334
+          :iterations: 26085
+          :cycles: 5
+          :slowdown: 13.897646049671856
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 21:45:14 +0100'
+    :time: *1
+    :collection_size: 20
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 713592
+            :retained: 350104
+          :objects:
+            :allocated: 7026
+            :retained: 1243
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.25107904797139
+          :memory:
+            :allocated: 2319944
+            :retained: 480280
+          :objects:
+            :allocated: 16805
+            :retained: 1763
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.305328535073263
+          :memory:
+            :allocated: 3785840
+            :retained: 232
+          :objects:
+            :allocated: 27765
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.497931591161336
+          :memory:
+            :allocated: 3923280
+            :retained: 0
+          :objects:
+            :allocated: 35621
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 360.86586408211906
+          :ips: 360.86586408211906
+          :error: 13
+          :microseconds: 500087971.41806984
+          :iterations: 180180
+          :cycles: 36
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 142.96908822156868
+          :ips: 142.96908822156868
+          :error: 14
+          :microseconds: 500067367.5629692
+          :iterations: 70574
+          :cycles: 14
+          :slowdown: 2.52408313273189
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 82.05331621843936
+          :ips: 82.05331621843936
+          :error: 4
+          :microseconds: 500031202.21816444
+          :iterations: 40944
+          :cycles: 8
+          :slowdown: 4.3979436872659114
+        AMS:
+          :name: AMS
+          :central_tendency: 26.284334925176157
+          :ips: 26.284334925176157
+          :error: 2
+          :microseconds: 500091327.5949421
+          :iterations: 13062
+          :cycles: 2
+          :slowdown: 13.729313110238438
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 22:21:56 +0100'
+    :time: *1
+    :collection_size: 50
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 1770680
+            :retained: 872968
+          :objects:
+            :allocated: 17508
+            :retained: 3097
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.292511351571148
+          :memory:
+            :allocated: 5829984
+            :retained: 1202432
+          :objects:
+            :allocated: 41901
+            :retained: 4399
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.330806243928886
+          :memory:
+            :allocated: 9439152
+            :retained: 232
+          :objects:
+            :allocated: 69165
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.539905573000203
+          :memory:
+            :allocated: 9809400
+            :retained: 0
+          :objects:
+            :allocated: 88843
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 146.615708550937
+          :ips: 146.615708550937
+          :error: 7
+          :microseconds: 500057356.23306274
+          :iterations: 73164
+          :cycles: 14
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 54.735015932462375
+          :ips: 54.735015932462375
+          :error: 7
+          :microseconds: 499987734.3200493
+          :iterations: 26740
+          :cycles: 5
+          :slowdown: 2.6786455809539977
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 33.48873558000768
+          :ips: 33.48873558000768
+          :error: 2
+          :microseconds: 500073988.669014
+          :iterations: 16662
+          :cycles: 3
+          :slowdown: 4.378060443657496
+        AMS:
+          :name: AMS
+          :central_tendency: 10.600474823225085
+          :ips: 10.600474823225085
+          :error: 1
+          :microseconds: 499992222.7480221
+          :iterations: 5236
+          :cycles: 1
+          :slowdown: 13.831051061006217
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 22:58:38 +0100'
+    :time: *1
+    :collection_size: 100
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 3523680
+            :retained: 1734960
+          :objects:
+            :allocated: 34834
+            :retained: 6149
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.2905553285201834
+          :memory:
+            :allocated: 11594864
+            :retained: 2385328
+          :objects:
+            :allocated: 83419
+            :retained: 8767
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.351886663942242
+          :memory:
+            :allocated: 18858336
+            :retained: 232
+          :objects:
+            :allocated: 138165
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.532863370113064
+          :memory:
+            :allocated: 19496040
+            :retained: 0
+          :objects:
+            :allocated: 176689
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 72.5553526041049
+          :ips: 72.5553526041049
+          :error: 6
+          :microseconds: 500018325.23303604
+          :iterations: 36008
+          :cycles: 7
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 27.961435258955476
+          :ips: 27.961435258955476
+          :error: 5
+          :microseconds: 500149842.84978485
+          :iterations: 13386
+          :cycles: 2
+          :slowdown: 2.5948364929109604
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 16.89501141128029
+          :ips: 16.89501141128029
+          :error: 2
+          :microseconds: 500005862.6529503
+          :iterations: 8255
+          :cycles: 1
+          :slowdown: 4.294483788016969
+        AMS:
+          :name: AMS
+          :central_tendency: 5.29263302712647
+          :ips: 5.29263302712647
+          :error: 0
+          :microseconds: 500187791.3559723
+          :iterations: 2628
+          :cycles: 1
+          :slowdown: 13.70874425493607
+  modifiable: true
+- !ruby/object:OpenStruct
+  table:
+    :created_at: '2020-01-07 23:35:23 +0100'
+    :time: *1
+    :collection_size: 250
+    :relations:
+    - :microposts
+    - :addresses
+    :data:
+      :memory:
+        FastJsonapi:
+          :name: FastJsonapi
+          :ratio: 1.0
+          :memory:
+            :allocated: 8863624
+            :retained: 4314856
+          :objects:
+            :allocated: 86857
+            :retained: 15314
+          :strings:
+            :allocated: 50
+            :retained: 50
+        JsonapiRb:
+          :name: JsonapiRb
+          :ratio: 3.2487650649440907
+          :memory:
+            :allocated: 28795832
+            :retained: 5943584
+          :objects:
+            :allocated: 208057
+            :retained: 21877
+          :strings:
+            :allocated: 50
+            :retained: 50
+        SimpleAMS:
+          :name: SimpleAMS
+          :ratio: 5.315586491484747
+          :memory:
+            :allocated: 47115360
+            :retained: 232
+          :objects:
+            :allocated: 345165
+            :retained: 1
+          :strings:
+            :allocated: 50
+            :retained: 0
+        AMS:
+          :name: AMS
+          :ratio: 5.475688048139226
+          :memory:
+            :allocated: 48534440
+            :retained: 0
+          :objects:
+            :allocated: 440470
+            :retained: 0
+          :strings:
+            :allocated: 50
+            :retained: 0
+      :speed:
+        FastJsonapi:
+          :name: FastJsonapi
+          :central_tendency: 28.603446743719164
+          :ips: 28.603446743719164
+          :error: 4
+          :microseconds: 499999125.9581375
+          :iterations: 14048
+          :cycles: 2
+          :slowdown: 1.0
+        JsonapiRb:
+          :name: JsonapiRb
+          :central_tendency: 9.526423180365725
+          :ips: 9.526423180365725
+          :error: 2
+          :microseconds: 500036456.03305817
+          :iterations: 4490
+          :cycles: 1
+          :slowdown: 3.0025379097867306
+        SimpleAMS:
+          :name: SimpleAMS
+          :central_tendency: 6.472748664223964
+          :ips: 6.472748664223964
+          :error: 1
+          :microseconds: 500124084.61483
+          :iterations: 3213
+          :cycles: 1
+          :slowdown: 4.4190572239913335
+        AMS:
+          :name: AMS
+          :central_tendency: 2.041464328180816
+          :ips: 2.041464328180816
+          :error: 0
+          :microseconds: 500431490.41101456
+          :iterations: 1017
+          :cycles: 1
+          :slowdown: 14.011240044154086
+  modifiable: true

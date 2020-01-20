@@ -11,7 +11,7 @@ activate :blog do |blog|
   blog.sources = "posts/{year}/{month}-{day}-{title}/body.html"
   #blog.taglink = "blog/{tag}.html"
   #blog.layout = "layouts/blog/post"
-  # blog.summary_separator = /(READMORE)/
+  blog.summary_separator = /(READMORE)/
   # using generator I can parse the post content and inject the breaking myself
   # it would allow me to inject a link instead of just a string
   #blog.summary_generator = ->(a, b, c, d){binding.pry && s}
