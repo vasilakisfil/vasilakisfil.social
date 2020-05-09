@@ -111,7 +111,7 @@ pub struct RemoteStart {
     id: Uuid,
     created_at: chrono::DateTime<Utc>,
     updated_at: chrono::DateTime<Utc>,
-    Meta: meta
+    meta: Meta
 }
 ```
 
@@ -130,7 +130,7 @@ If we are fine with loosening type checking a bit (and shift more checks over th
 db itself), we could use the [AsChangeset](http://docs.diesel.rs/diesel/query_builder/derive.AsChangeset.html)
 trait that would enable us to make all fields optional and when updating the
 struct, diesel will update only the ones that are Some. It's a quite handy
-pattern if you want to build up something quick.
+pattern if you want to build up something quickly.
 
 But as I said, that is problematic because:
 
