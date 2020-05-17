@@ -678,7 +678,7 @@ resource, we should be able to do that now as well, right?
 SimpleAMS::Renderer.new(user, {
   serializer: UserSerializer,
   fields: [:id, :email, :name, :created_at, microposts: [:content]],
-  relations: [:microposts]
+  includes: [:microposts]
 }).to_json
 ```
 
@@ -688,7 +688,7 @@ or if we want to go yet another level down:
 SimpleAMS::Renderer.new(user, {
   serializer: UserSerializer,
   fields: [:id, :email, :name, :created_at, microposts: [:content, media: [:url]]],
-  relations: [microposts: [:media]]
+  includes: [microposts: [:media]]
 }).to_json
 ```
 
