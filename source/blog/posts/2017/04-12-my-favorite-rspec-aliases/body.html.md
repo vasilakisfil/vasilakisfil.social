@@ -21,6 +21,7 @@ When running the tests I always like to have in `.rspec` the following 2 options
 ```
 
 Now my usual rspec test file would look like that:
+
 ```ruby
 RSpec.describe "Feature: Create account", :type => :feature do
   describe "with correct input" do
