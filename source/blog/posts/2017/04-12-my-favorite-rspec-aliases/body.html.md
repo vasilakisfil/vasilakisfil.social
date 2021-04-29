@@ -81,6 +81,7 @@ end
 ```
 
 Or with some meta alcohol:
+
 ```ruby
 module RSpecWith
   [:with, :when, :inside].each do |descriptor|
@@ -97,6 +98,7 @@ end
 ```
 
 And about the top feature thingy:
+
 ```ruby
 RSpec.send(:define_singleton_method, :top_feature) do |text, options, &block|
   RSpec.describe("Feature: #{text}", options, &block)
